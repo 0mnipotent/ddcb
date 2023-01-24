@@ -3,14 +3,14 @@ const LocalSession = require('telegraf-session-local')
 const mysql = require('mysql2/promise')
 const pool = mysql.createPool({
     host: 'localhost',
-    user: 'ddcb',
-    password: '8hcvHYV6VwCv',
+    user: 'USERNAME',
+    password: 'PASSWORD',
     database: 'ddcb',
     waitForConnections: true,
     connectionLimit: 10,
     queueLimit: 0
 });
-const bot = new Telegraf('5642618740:AAHk-SyOdwPLsd86pUef8UQF4Mv6AUu0l3Y');
+const bot = new Telegraf('BOT TOKEN');
 const localSession = new LocalSession({
   database: 'session.json'
 })
