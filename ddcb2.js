@@ -2,12 +2,12 @@ const { Telegraf } = require('telegraf')
 const mysql = require('mysql2/promise')
 const connection = mysql.createConnection({
       host: 'localhost',
-      user: 'ddcb',
-      password: '8hcvHYV6VwCv',
+      user: 'USERNAME',
+      password: 'PASSWORD',
       database: 'ddcb'
 })
 
-const bot = new Telegraf('5642618740:AAHk-SyOdwPLsd86pUef8UQF4Mv6AUu0l3Y');
+const bot = new Telegraf('BOT TOKEN');
 
 bot.command('register', async ctx => {
     const { id,  username } = ctx.from;
